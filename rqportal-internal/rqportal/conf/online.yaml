@@ -1,0 +1,45 @@
+---
+feeds:
+  - url: mongodb://q-old-feeds.ricequant.com:27017
+    database: feeds
+    startid: 0  # minimum runid
+    endid: 1858297
+    runtype: bt
+  - url: mongodb://rqportal:rqportal!d123@q-mongo-bt-feeds.ricequant.com:27017
+    database: feeds
+    startid: 1858298
+    endid: 2001300  # maximum runid
+    runtype: bt
+  - url: mongodb://mongouser:83#7r8f73%j492@192.168.0.232:27017
+    database: feeds
+    startid: 2001301
+    endid: -1  # maximum runid
+    runtype: bt
+  - url: mongodb://rqportal:rqportal!d123@q-mongo-pt-feeds.ricequant.com:27017
+    database: feeds
+    startid: 0
+    endid: -1  # maximum runid
+    runtype: pt
+
+future_feeds:
+  - url: mongodb://rqportal:rqportal!d123@q-mongo-bt-feeds.ricequant.com:27017
+    database: futures_feeds
+    startid: 0
+    endid: -1  # maximum runid
+    runtype: bt
+  - url: mongodb://rqportal:rqportal!d123@q-mongo-pt-feeds.ricequant.com:27017
+    database: feeds
+    startid: 0
+    endid: -1  # maximum runid
+    runtype: pt
+
+runrecord:
+  url: mongodb://rqportal:rqportal!d123@q-mongo-web-datahub.ricequant.com:27017
+  database: runinfo
+
+strategy:
+  url: mongodb://rqportal:rqportal!d123@q-mongo-web-datahub.ricequant.com:27017
+  database: strategy
+
+supported_runtype: # bt/pt
+  - bt

@@ -1,0 +1,22 @@
+---
+feeds:
+  - url: mongodb://root:root@192.168.10.152:27017
+    database: pull
+    startid: 0  # minimum runid
+    endid: -1
+    runtype: bt
+
+
+future_feeds:
+  - url: mongodb://root:root@192.168.10.152:27017
+    database: pull
+    startid: 0  # minimum runid
+    endid: -1
+    runtype: bt
+
+runrecord:
+  url: mongodb://root:root@192.168.10.152:27017
+  database: pull
+
+supported_runtype:
+  - bt
